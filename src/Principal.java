@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Principal {
     public static void main(String[] args) {
         Scanner leitura = new Scanner(System.in);
-        String cep= "";
+        String cep = "";
         List<Endereco> enderecos = new ArrayList<>();
 
         ConsultaCep consultaCep = new ConsultaCep();
@@ -17,7 +17,7 @@ public class Principal {
             System.out.println("Digite um número de CEP para consulta:");
             cep = leitura.nextLine();
 
-            if (cep.equalsIgnoreCase("sair")){
+            if (cep.equalsIgnoreCase("sair")) {
                 break;
             }
 
@@ -32,7 +32,7 @@ public class Principal {
         }
 
 
-        if (cep.equalsIgnoreCase("sair")){
+        if (cep.equalsIgnoreCase("sair")) {
             System.out.println("Finalizando a aplicação");
         }
     }
